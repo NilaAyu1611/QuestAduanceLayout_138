@@ -37,16 +37,15 @@ fun BelajarLayout(
     Column (
         modifier = modifier.fillMaxSize( )
     ){
-        HeaderSection2()
+        HeaderSection2()                    // Disini tinggal kita panggil paramter tersebut
         DataMhs(
             param = "Nama",
-            argu = "Nila Ayu"
+            argu = "Nila Ayu Citra Wulan"
         )
         DataMhs(
             param = "Nim",
             argu = "20220140138"
         )
-
 
         DataMhs(
             param = "Prodi",
@@ -80,15 +79,15 @@ fun HeaderSection2() {
     Box(
         modifier = Modifier
             .fillMaxWidth()
-            .background(Color.LightGray),
-        contentAlignment = Alignment.BottomEnd
+            .background(Color.LightGray)
+
     )
 
     {
         Row(
-            modifier = Modifier.fillMaxWidth().padding(16.dp)
+            modifier = Modifier.fillMaxWidth().padding(16.dp)       // diberikan jaraknya
         ){
-            Box(contentAlignment = Alignment.BottomEnd
+            Box(contentAlignment = Alignment.BottomEnd              // Agar bisa terletak dibawah disertai dengan backgroundnya
 
             ){
                 Image(
@@ -117,7 +116,7 @@ fun HeaderSection2() {
 
 @Composable
 fun DataMhs(
-    param : String, argu:String
+    param : String, argu:String             // Agar lebih mudah dideklarasikan maka nani tinggal dipanggil
 ){
     Column (
         modifier = Modifier.padding(16.dp)
